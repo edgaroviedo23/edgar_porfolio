@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styleportafolio.css'>
+    <script src='main.js'></script>
+    <img src="img/fondo1.webp" alt="Fondo" class="background">
+</head>
+<body>
+<header>  
+    <div class="container">
+        <a href="portafolio.html">
+            <svg id="Capa_1" class="rotate-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.43 18.11">
+                <path class="cls-1" d="M17.43,8.88l-2.76.72c-2.81.74-4.95,3.04-5.48,5.9l-.48,2.62-.48-2.62c-.53-2.86-2.66-5.16-5.48-5.89l-2.76-.72,2.76-.71c2.81-.72,4.96-3,5.51-5.85l.45-2.32.45,2.32c.55,2.85,2.69,5.13,5.51,5.85l2.76.71Z"/>
+            </svg>
+        </a>
+        <p id="visit-counter">Clicks en web: <span id="visit-count">0</span></p>
+        <h1>Edgar Oviedo</h1>
+    </div>
+</header>
+    <h2> DISEÑO GRÁFICO </h2>
+    <div class="form">
+        <form onsubmit="enviarFormulario(event)">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" required>
+    
+            <label for="lname">correo:</label>
+            <input type="text" id="lname" name="lname" required>
+    
+            <label for="message">Explícanos tu idea:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>  
+</body>
+<footer> Portafolio Edgar Oviedo 2025 Todos los derechos reservados </footer>
+<script src='portafolio.js'></script>    
+</body>
+</html>

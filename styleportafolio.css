@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+  position: absolute;
+  top: 10;
+  right: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'OCRAEXT.TTF';
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+h1:hover {
+  transform: scale(1.1);
+  color: #ffcc00;
+}
+
+h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 90px;
+  font-family: 'MOD20.TTF';
+  position: absolute;
+  top: 25%; 
+  left: 23%; 
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+h2:hover {
+  transform: scale(1.1); 
+  color: #ffcc00; 
+}
+
+h3 {
+  color: #fff;
+  margin: 0; 
+  font-size: 50px;
+  font-family: 'Oleragie.otf';
+  position: absolute; 
+  top: 35%; 
+  left: 43%;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+h3:hover {
+  transform: scale(1.1); 
+  color: #ffcc00; 
+}
+
+h4 {
+  color: #fff;
+  margin: 0; 
+  font-size: 130px;
+  font-family: 'Lovelace-Extrabold-Italic-trial.ttf'; 
+  position: absolute; 
+  top: 35%; 
+  left: 20%;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+h4:hover {
+  transform: scale(1.1); 
+  color: #ffcc00; 
+}
+
+h5 {
+  color: #fff;
+  position: absolute;
+  top: 42%; 
+  left: 32%; 
+  font-size: 45px;
+  font-family: 'OCRAEXT.TTF';
+  transition: transform 0.3s ease, color 0.3s ease;
+} 
+
+form {
+  color: #fff;
+  position: absolute;
+  top: 50%; 
+  left: 32%; 
+  font-size: 45px;
+  font-family: 'OCRAEXT.TTF';
+  transition: transform 0.3s ease, color 0.3s ease;
+} 
+
+h5:hover {
+  transform: scale(1.1); 
+  color: #ffcc00; 
+}
+
+.cls-1 {
+  fill: #fff;
+  stroke-width: 0px;
+}
+
+#Capa_1 {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.container {
+  margin: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+#visit-counter {
+  margin: 20px 0 20px 20px;
+  font-size: 18px;
+  font-family: 'OCRAEXT.TTF';
+  color: #ffffff;
+  
+}
+
+#visit-counter span {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+
+@font-face {
+  font-family: 'OCRAEXT.TTF'; 
+  src: url(fuentes/OCRAEXT.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'MOD20.TTF'; 
+  src: url(fuentes/) format('truetype');
+}
+
+@font-face {
+  font-family: 'Oleragie.otf'; 
+  src: url(fuentes/Oleragie.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lovelace-Extrabold-Italic-trial.ttf'; 
+  src: url(fuentes/Lovelace-Extrabold-Italic-trial.ttf) format('truetype');
+}
+
+.rotate-svg {
+  transition: transform 0.5s ease;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+p {
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-svg:hover {
+  animation: spin 1ms infinite ; 
+}
+
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 70px;
+    top: 20%;
+    left: 15%;
+  }
+
+  h3 {
+    font-size: 40px;
+    top: 30%;
+    left: 35%;
+  }
+
+  h4 {
+    font-size: 100px;
+    top: 30%;
+    left: 15%;
+  }
+
+  h5 {
+    font-size: 35px;
+    top: 40%;
+    left: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 50px;
+    top: 10%;
+    left: 10%;
+  }
+
+  h3 {
+    font-size: 30px;
+    top: 25%;
+    left: 25%;
+  }
+
+  h4 {
+    font-size: 70px;
+    top: 25%;
+    left: 10%;
+  }
+
+  h5 {
+    font-size: 25px;
+    top: 35%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+    top: 10%;
+    left: 5%;
+  }
+
+  h3 {
+    font-size: 20px;
+    top: 20%;
+    left: 15%;
+  }
+
+  h4 {
+    font-size: 50px;
+    top: 20%;
+    left: 5%;
+  }
+
+  h5 {
+    font-size: 20px;
+    top: 30%;
+    left: 15%;
+  }
+}
+
+.ripple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 204, 0, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-effect 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-effect {
+    from {
+        transform: scale(0);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+
+.form {
+
+  padding: 15px;
+  width: 35%;
+  position: absolute;
+  top: 43%; 
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+
+.form input, .form textarea {
+  width: 150%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+
+.form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffcc00;
+  display: block;
+  text-align: left;
+
+}
+
+
+.form button {
+  background: #ffcc00;
+  color: black;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 157%;
+}
+
+
+.form button:hover {
+  background: #ff9900;
+  transform: scale(1.05);
+}
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  z-index: -2;
+  transition: transform 0.1s ease-out;
+
+}
+
