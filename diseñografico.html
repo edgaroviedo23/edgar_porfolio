@@ -9,7 +9,10 @@
     <script src='main.js'></script>
     <img src="img/fondo1.webp" alt="Fondo" class="background">
 </head>
-<body>
+<img id="background" src="img/fondo1.webp" alt="Fondo" class="background">
+<body id="body">
+    <button id="toggle-theme">Modo Oscuro</button>
+    <button id="lang-btn"> Traducir</button>
 <header>  
     <div class="container">
         <a href="portafolio.html">
@@ -17,11 +20,13 @@
                 <path class="cls-1" d="M17.43,8.88l-2.76.72c-2.81.74-4.95,3.04-5.48,5.9l-.48,2.62-.48-2.62c-.53-2.86-2.66-5.16-5.48-5.89l-2.76-.72,2.76-.71c2.81-.72,4.96-3,5.51-5.85l.45-2.32.45,2.32c.55,2.85,2.69,5.13,5.51,5.85l2.76.71Z"/>
             </svg>
         </a>
+        
         <p id="visit-counter">Clicks en web: <span id="visit-count">0</span></p>
+
         <h1>Edgar Oviedo</h1>
     </div>
 </header>
-    <h2> DISEÑO GRÁFICO </h2>
+<h2><a id="diseño"href="diseñografico.html">DISEÑO GRÁFICO</a></h2>
     <div class="form">
         <form onsubmit="enviarFormulario(event)">
             <label for="fname">Nombre:</label>
